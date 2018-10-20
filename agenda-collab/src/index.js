@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
+
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import GlobalColors from './styles/settings/colors';
+
+ReactDOM.render(
+    <Fragment>
+        <GlobalColors />
+        <App />
+    </Fragment>,
+    document.getElementById("root")
+);
 

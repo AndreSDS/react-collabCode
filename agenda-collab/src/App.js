@@ -1,10 +1,14 @@
 import React from "react";
 
-//jsx
-const App = () => (
-        <article>
-          <h1>Hello World!</h1>
-        </article>
+import { Card, Name, Price, Description, Button } from "./style";
+
+const App = () => ( 
+        <Card>
+          <Name>Curso React!</Name>
+          <Price>$25</Price>
+          <Description>Professional features for your business to grow!</Description>
+          <Button>Learn more...</Button>
+        </Card>
     );
 
 export default App;
