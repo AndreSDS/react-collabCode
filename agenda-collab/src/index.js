@@ -1,13 +1,16 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './App';
+import Reset from "./styles/generic";
+import Global from "./styles/settings";
 
-import GlobalColors from './styles/settings/colors';
+import App from './App';
 
 ReactDOM.render(
     <Fragment>
-        <GlobalColors />
+        <Global.Colors />
+        <Global.Size />
+        <Reset />
         <App />
     </Fragment>,
     document.getElementById("root")
