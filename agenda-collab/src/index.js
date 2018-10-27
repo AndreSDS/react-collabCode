@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import Reset from "./styles/generic";
 import Global from "./styles/settings";
+import Base from './styles/base';
 
 import App from './App';
 
@@ -11,6 +12,7 @@ ReactDOM.render(
         <Global.Colors />
         <Global.Size />
         <Reset />
+        <Base />
         <App />
     </Fragment>,
     document.getElementById("root")
