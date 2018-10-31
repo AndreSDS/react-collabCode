@@ -1,0 +1,22 @@
+{
+"courses": [
+    {
+        "id":0,
+        "name":"Curso React",
+        "price":180,
+        "description":"Curso básico de React utilizando styled-components"
+    },
+    {
+      "id":1,
+      "name":"Curso VueJS",
+      "price":240,
+      "description":"Curso básico de VueJS utilizando styled-components"
+    },
+    {
+      "id":2,
+      "name":"Curso EmberJS", 
+      "price":310,
+      "description":"Curso básico de EmberJS utilizando styled-components"
+    }
+  ]
+}

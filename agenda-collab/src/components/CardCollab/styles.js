@@ -10,6 +10,7 @@ padding: 58px 0 40px 0;
 width: 370px;
 border-radius: var(--radius);
 ${center};
+margin-bottom: var(--large);
 `;
 
 export default Card;
