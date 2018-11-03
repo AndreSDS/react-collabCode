@@ -1,14 +1,31 @@
-import React from "react";
+import React, { Component, Fragment } from "react";
+import axios from "axios";
 
-import { Card, Name, Price, Description, Button } from "./style";
+import CardCollab from "./components/CardCollab";
 
-const App = () => ( 
-        <Card>
-          <Name>Curso React!</Name>
-          <Price>$25</Price>
-          <Description>Professional features for your business to grow!</Description>
-          <Button>Learn more...</Button>
-        </Card>
+//stateful
+class App extends Component {
+  state = {
+    courses: []
+  };
+
+  componentDidMount(){
+    axios.get('http://localhost:3001/courses').then(({data}) => {
+      this.setState({
+        courses: data
+      });
+    });
+  }
+
+  render(){
+    return (
+    <Fragment>
+      {this.state.courses.map( course => (
+        <CardCollab {... course } key={ course.id } />
+      ))}
+    </Fragment>
     );
+  };
+};
 
 export default App;
