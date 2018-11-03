@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { center } from './styles/tools';
 
 export const Card = styled.article`
 background-color: var(--color-first);
@@ -7,7 +8,7 @@ font-family: 'Open Sans', sans-serif;
 text-align: center;
 padding: 58px 0 40px 0;
 width: 370px;
-margin: 0 auto;
+${center};
 `;
 
 export const Name = styled.h1`
@@ -27,15 +28,15 @@ export const Button = styled.a`
     line-height: 35px;
     background: var(--color-zero);
     color: var(--color-first);
-    border-radius: 4px;
+    border-radius: var(--radius);
     text-trasnform: uppercase;
     cursor: pointer;
     transition: all 150ms linear;
     border: 1px solid var(--color-first);
 
-    &:hover{
-        background-color: var(--color-first);
-        color: var(--color-zero);
-        border: 1px solid var(--color-zero);
-    }
+            &:hover{
+                background-color: var(--color-first);
+                color: var(--color-zero);
+                border: 1px solid var(--color-zero);
+            }
 `;
